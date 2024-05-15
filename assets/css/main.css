@@ -1,0 +1,81 @@
+.header
+{
+    top:0;
+    position: sticky;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.logo a{
+    font-family: var(--subFont1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+ 
+color: #545be8;
+}
+.navbar ul{
+    display: flex;
+    gap:40px;
+   
+}
+
+.navbar a{
+    color: #101928;
+    font-family: var(--mainFont);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.active {
+    font-weight: 1000;
+}
+
+.auth
+{
+    display: flex;
+}
+
+.header .auth a
+{
+width: 170px;
+height: 48px;
+padding: 13px 49px;
+padding: 13px 49px;
+border-radius: 10px;
+font-family: var(--subFont2);
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: left;
+}
+.header .auth a:first-of-type
+{
+    border: 1px solid var(--mainColour);
+    color: var(--mainColour);
+    margin-right: 24px;
+}
+.header .auth a:last-of-type
+{
+    color: #ffffff;
+    background: var(--mainColour);
+    
+}
+@media(max-width:1280px)
+{
+    .navbar
+    {
+        display: none;
+    }
+}
