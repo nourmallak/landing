@@ -19,6 +19,7 @@
 .header
 {
     display: flex;
+    flex-wrap: wrap;
 }
 body{
     font-family :var(--mainFont);
@@ -32,6 +33,7 @@ body{
 .row
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
