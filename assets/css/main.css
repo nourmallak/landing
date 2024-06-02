@@ -1,11 +1,13 @@
 .header
 {
-    top:0;
-    position: sticky;
-    height: 80px;
-    background: #ffffff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
+        position: sticky;
+        top:0;
+        box-shadow: 0px 3px 15px 0px rgba(75, 72, 72, 0.1);
+        z-index: 100;
+        background-color: #fff;
+        width: 100%;
+        padding-block: 5px;
+      
 }
 .header .logo
 {
@@ -70,19 +72,15 @@ text-align: left;
     background: var(--mainColour);
     
 }
-@media(max-width:1280px)
-{
-    .navbar
-    {
-        display: none;
-    }
-}
+
 .footer
 {
     background-color: #393E46;
     padding: 100px 0;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
 }
 .footer .footer-right-side
 {
@@ -90,11 +88,16 @@ text-align: left;
     flex-wrap: wrap;
     gap: 40px;
     margin-left: 45px;
+    flex:1
 }
-
+.footer-left-side
+{
+    flex:1;
+    margin-left: 60px;
+}
 .footer-left-side p
 {
-    width: 400px;
+    
     font-family: var(--mainFont);
     font-weight: 400;
     font-size: 13px;
@@ -175,7 +178,265 @@ text-align: left;
     justify-content: space-evenly;
     align-items: flex-start;
 }
-/* start section*/
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 50px;
+}
+.about .first-part{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+}
+.about .first-part span{
+    font-family: var(--subFont2);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    text-align: left;
+    color: #545be8;
+ 
+}
+.about .first-part h2{
+    font-family: var(--mainFont);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: #131e31;
+    width: 160px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ 
+}
+.about .first-part p{
+    width: 230px;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    color: #969696;
+    
+}
+.about .second-part
+{
+    background-color: #545be8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
+    margin-right: 16px;
+    padding: 10px;
+    height: 230px;
+    border-radius: 5%;
+    flex-grow: 1;
+}
+.about .second-part img{
+    width: 30px;
+    background-color: floralwhite;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.about .second-part h3
+{
+    font-family: var(--subFont2);
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    font-size: medium;
+    margin-top: 15px;
+}
+.about .second-part p{
+    width: 150px;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    color: #dddddd;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* start section-1*/
+.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 120px);
+    
+}
+.courses
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex:2;
+    justify-content: center;
+}
+.courses .course-item
+{
+   
+    margin: 10px;
+    gap: 16px;
+    box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+    width: 35%;
+}
+.courses .course-item .represent-image 
+{
+    position: relative;
+}
+
+.courses .course-item .represent-image img
+{
+    width : 100% ;
+    filter: brightness(60%);
+}
+ 
+.courses .course-item .represent-image .pos
+{
+   display: flex;
+   flex-wrap: wrap;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   align-items: flex-start;
+   justify-content: space-between;
+    
+}
+.courses .course-item .pos span:first-of-type
+{
+   padding :6px;
+   background-color: var(--mainColour);
+   margin-top: 12px;
+   font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: left;
+    color: #ffffff;
+ 
+}
+.courses .course-item .pos  span:last-of-type
+{
+   padding :6px;
+   background-color: fff;
+   align-self: flex-end;
+   font-family: Poppins;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.section-2 .description
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex:1;
+}
+.section-2 .description span
+{
+    font-family: var(--subFont2);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    text-align: left;
+    color: #545be8;
+ 
+}
+.section-2 .description h2{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 50px;
+    text-align: left;
+    color: #131e31;
+    margin-block: 35px;
+}
+.section-2 .description p{
+    width:45%;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: left;
+    color: #969696;
+}
+ .section-2 .container
+{
+    justify-content: center; 
+    
+}
+.section-2 .data
+{
+    padding: 10px;
+}
+.section-2 .data h3{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #131e31;
+    font-size: 12px;
+}
+.section-2 .data span
+{
+    font-family: var(--mainFont);
+    color: #969696;
+    font-size: 12px;
+}
+.section-2 .course-item .data .oneline
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.section-2 .course-item .data .oneline span
+{
+    font-size: 8px;
+    text-align: right;
+    margin-left: 97px;
+    color: #545be8;
+    font-weight: 400;
+}
+.section-2 .course-item .data .views span
+{
+    margin-right: 5px;
+}
+.description .see{
+    padding: 5.3541765213012695px 20.18113136291504px;
+    background: #545be8;
+    border-radius: 5px;
+    width: 105px;
+    height: 25px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    display: flex;
+    justify-content: center;   
+    color: #ffffff;
+    margin-top: 15px;
+ 
+}
+
+/* start section-2*/
 .testimonial .row
 {
     display: flex;
@@ -212,6 +473,7 @@ text-align: left;
 .testimonials .client
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .testimonials .testimonial .client .client-data h3{
     font-family: var(--mainFont);
@@ -232,7 +494,6 @@ text-align: left;
     color: #969696;
 }
 .testimonial p{
-    width: 421px;
     font-family: var(--mainFont);
     font-weight: 400;
     font-size: 16px;
@@ -255,3 +516,401 @@ text-align: left;
     top: 0;
     right: 0;
 }
+
+
+ .section-3 .group
+{
+   display: flex;
+   flex-wrap: wrap;
+    flex:1;
+align-items: center;}
+.group img
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;    
+    width: 500px;
+    height: 400px;
+    margin-left: 150px;
+}
+.section-3 
+{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+    display: flex;   
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section-3 .des{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 150px;
+    justify-content: center;
+    line-height: 20px;
+}
+.section-3 .des span
+{
+    color: #F0C932;
+    font-family: var(--subFont2);
+}
+.section-3 .des h2
+{
+    color: #FFFFFF;
+    width: 180px;
+    font-family: var(--mainFont);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+.section-3 .des p
+{
+    width:300px;
+    color: #DDDDDD;
+    font-family: var(--mainFont);
+    font-size: 12px;
+
+}
+.section-3 .des .info
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.section-3 .des .infomarge
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.section-3 .des .infomarge h3
+{
+    color: #DDDDDD;
+    font-size: 12px;
+    font-family: var(--subFont2);
+    font-weight: 400;
+}
+.section-3 .des .infomarge span
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.intro{
+    margin-block: 100px;
+
+
+}
+.start 
+{
+    display: flex;
+    justify-content: center;
+}
+.intro .begin{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-bottom: 30px;
+}
+.intro .begin h4{
+    
+    font-family: var(--subFont2);
+    font-size: 10px;
+    color: #545be8;
+    font-weight: 400;
+    margin-bottom: 20px;
+ 
+}
+.intro .begin span{
+    
+    font-weight: 800;
+     
+    }
+.intro .begin h1{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    text-align: left;
+    font-size: 40px;
+    width:90%;
+    margin-bottom: 20px;
+}
+.intro .begin h1 span{
+    color: #545be8;
+    font-family: var(--mainFont);
+    font-weight: 700;
+    text-align: left;
+    font-size: 32px;
+    width:90%
+}
+.intro .begin .buttons{
+    display: flex;
+    margin-top: 30px;
+}
+.intro .begin .buttons .play{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;       
+
+}
+.intro .begin .buttons .play a{
+    font-family: var(--subFont2);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 9px;
+    text-align: left;
+    color: #131e31;
+    width:fit-content ;
+
+}
+.intro .begin .buttons .play img{
+    size: 50px;
+}
+.intro .begin p{
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    color: #969696;
+    width:90%;
+}
+ 
+.intro .begin .register{
+    padding: 7px;
+    background: #545be8;
+    border-radius: 4px;
+    font-family: var(--subFont2);
+    font-weight: 700;
+    font-size: 12px;
+    text-align: left;
+    color: #ffffff;
+    width:fit-content !important; 
+    margin-right: 10px;
+}
+
+.intro .picture
+{
+    flex: 1;
+    
+}
+.intro .picture img
+{
+    width: 80%;
+    
+}
+
+.move
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;  
+      margin-left: calc(100% - 1250px);
+
+}
+.move svg .reverse
+{
+    width:14px;
+
+}
+.move img
+{
+    background-color: #F0C932;
+    padding: 10px;   
+    border-radius: 50%;
+    width:35px;
+
+}
+.about .imagesdesc
+{
+    display: flex;
+    
+    flex:4;
+}
+
+
+
+@media(max-width : 1253px)
+{
+        .navbar
+        {
+            display: none;
+        }
+        .about .imagesdesc
+        {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .about.second-part
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+    
+
+}
+@media(max-width : 1223px)
+{
+        .section-3 
+        {
+            flex-direction: column;
+        }
+        .section-2 .row
+        {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+        }
+        .section-2 .description p 
+        {
+            width:100%;
+            text-align: center;
+        }
+        .section-2 .description h2
+        {
+            width:100%;
+            text-align: center;
+        }
+        .section-2 .description span
+        {
+            width:100%;
+            text-align: center;
+        }
+        .section-2 .description .see
+        {
+            text-align: center;
+            margin-left: 440px;
+        }
+        .section-2 .course-item
+        {
+            width:45%;
+        }
+        .section-2 .courses
+        {
+            justify-content: space-around;
+        }
+        .about .imagesdesc
+        {
+            display: flex;
+            flex:2
+        }
+        .about .first-part
+        {
+            display: flex;
+            flex:2
+        }
+
+}
+@media(max-width : 1107px)
+{
+        .section-3 
+        {
+           
+            align-items: stretch;
+            align-content: center;
+            height: 800px;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .section-3 
+        {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .group img {
+            margin: 0;
+        }
+        
+}
+@media(max-width : 887px)
+{
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .intro .picture img
+        {
+            width: 300px;
+            margin-top: 10px;
+        }
+
+    
+}
+@media(max-width : 800px)
+{
+        .footer{
+            width: 100%;
+        }
+        .intro .picture img
+        {
+            width: 300px;
+        }
+        .courses .course-item
+        {
+            width: 60%;
+            margin-top: 10px;
+        }
+        .courses
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .section-2
+        {
+            width: 80%;
+        }
+        .testimonials .row
+       {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 10px;
+       }
+       .testimonial 
+       {
+        width: 100%;
+        
+       }
+
+}
+@media(max-width : 590px)
+{
+       
+       .about .row
+       {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+       }
+       .about .first-part {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 30px;
+        align-content: center;
+    }
+       .about.second-part
+       {
+        width: 70%;
+       }
+       
+}
+
+
