@@ -406,6 +406,7 @@ text-align: left;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 .section-2 .course-item .data .oneline span
 {
